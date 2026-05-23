@@ -1,50 +1,95 @@
-# Welcome to your Expo app 👋
+# 📝 Notoru: AI-Powered Education Assistant
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+[![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)](https://expo.dev/) [![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactnative.dev/) [![Groq](https://img.shields.io/badge/Powered_by-Groq-orange?style=for-the-badge)](https://groq.com/) [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
-## Get started
+**Notoru** is a cutting-edge mobile application built to revolutionize how students learn. By harnessing the lightning-fast inference of **Groq's Llama 3**, Notoru transforms chaotic lecture notes into structured knowledge, helps you memorize faster, and ensures you're ready for every exam.
 
-1. Install dependencies
+---
 
+## ✨ Core Features
+
+### 🚀 1. AI-Powered Note Transformation
+Stop wasting time formatting. Input messy transcripts or rough bullets and let Notoru generate beautiful, hierarchical Markdown notes.
+- **Auto-Summarization:** Extracts core concepts and definitions.
+- **Hierarchical Structure:** Intelligent header nesting for better readability.
+
+### 🎴 2. Automated Flashcard Generation
+Bridge the gap between reading and retaining. Instantly convert any note into a deck of interactive flashcards.
+- **Active Recall:** AI identifies testable facts automatically.
+- **One-Tap Creation:** No more manual card entry.
+
+### 🕸️ 3. Smart Concept Mapping
+Visualize the "Big Picture." Notoru analyzes your notes to suggest links between related subjects, creating a visual graph of your knowledge.
+- **Knowledge Graph:** Interactive node-link diagrams.
+- **Interdisciplinary Links:** Connects concepts across different subjects.
+
+### ✍️ 4. Exam Readiness Quizzes
+Simulate real testing conditions. Generate custom practice exams from your notes or PDF textbooks.
+- **Multiple Formats:** MCQs, True/False, and Short Answer.
+- **Instant Feedback:** Explanations provided for every answer.
+
+### ⏱️ 5. Focus Study Timer
+Master "Deep Work" with an integrated Pomodoro timer that tracks your productivity per subject.
+- **Productivity Analytics:** See exactly where your study time goes.
+- **Ambient Sounds:** Focused environment with built-in soundscapes.
+
+---
+
+## 🛠️ Technical Stack
+
+- **Frontend:** [React Native](https://reactnative.dev/) via [Expo](https://expo.dev/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **AI Engine:** [Groq SDK](https://github.com/groq/groq-typescript) (Llama 3-70B/8B)
+- **Styling:** Vanilla CSS-in-JS
+- **Markdown:** [react-native-markdown-display](https://github.com/iamacup/react-native-markdown-display)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v18 or newer)
+- npm or yarn
+- Expo Go app on your mobile device (to preview)
+
+### Installation
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/notoru.git
+   cd notoru
+   ```
+
+2. **Install dependencies**
    ```bash
    npm install
    ```
 
-2. Start the app
+3. **Configure Environment Variables**
+   Create a `.env` file in the root directory:
+   ```env
+   EXPO_PUBLIC_GROQ_API_KEY=your_groq_api_key_here
+   ```
 
+4. **Start the app**
    ```bash
    npx expo start
    ```
+   Scan the QR code with your Expo Go app (Android) or Camera (iOS).
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🗺️ Roadmap
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- [x] **Phase 1:** AI Note Transformation and local storage.
+- [ ] **Phase 2:** Flashcard generation and Study Timer.
+- [ ] **Phase 3:** Quiz generation and PDF support.
+- [ ] **Phase 4:** Concept Mapping and Cloud Sync.
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-```bash
-npm run reset-project
-```
+---
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+<p align="center">Made with ❤️ for students everywhere</p>
